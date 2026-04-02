@@ -1,0 +1,91 @@
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+secrets.json
+*.key
+api_keys.txt
+config.local.*
+
+# Notion export raw dumps — too large, keep local only
+notion-export-raw/
+*.zip
+*.tar.gz
+
+# Obsidian app config (local only, not vault content)
+obsidian-vault/.obsidian/workspace
+obsidian-vault/.obsidian/workspace.json
+obsidian-vault/.obsidian/cache
+obsidian-vault/.obsidian/plugins/*/data.json
+
+# Private / sensitive vault notes — NEVER push to GitHub
+obsidian-vault/Life/mental-log/
+obsidian-vault/Life/money-log/
+obsidian-vault/Life/journal/
+obsidian-vault/Life/step-tracking/
+obsidian-vault/English/mistakes-log/
+obsidian-vault/English/writing-samples/
+obsidian-vault/Output/blog-drafts/
+obsidian-vault/Output/published/
+obsidian-vault/_archive/
+docs/archive-report.md
+
+notion-templates/import/calendar.md
+notion-templates/import/journal.md
+notion-templates/import/money.md
+notion-templates/import/projects.md
+notion-templates/import/tasks.md
+obsidian-vault/English/ielts-tracker/
+obsidian-vault/English/vocab-daily/
+obsidian-vault/Knowledge/AI/
+obsidian-vault/Knowledge/game-dev/
+obsidian-vault/Research/papers/
+obsidian-vault/Research/phd-drafts/
+
+# Archive — cold storage, too heavy for git
+obsidian-vault/_archive/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Node (if any scripts use it)
+node_modules/
+package-lock.json
+
+# Automation / cron output
+scripts/*.out
+scripts/*.tmp
+.claude/settings.local.json

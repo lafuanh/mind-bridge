@@ -1,0 +1,28 @@
+{
+  "name": "mind-bridge",
+  "version": "0.1.1-alpha",
+  "description": "A personal cognitive OS — raw thought to structured knowledge via Claude, Notion, and Obsidian",
+  "author": "noupal",
+  "license": "MIT",
+  "skills": [
+    "skills/morning-brief.md",
+    "skills/midday-flush.md",
+    "skills/night-digest.md",
+    "skills/classify-route.md",
+    "skills/interrupt.md"
+  ],
+  "config": "CLAUDE.md",
+  "mcp": ".mcp.json",
+  "integrations": [
+    "notion",
+    "google-calendar",
+    "obsidian"
+  ],
+  "sync_schedule": {
+    "morning": "05:00 Asia/Jakarta",
+    "midday": "11:45 Asia/Jakarta",
+    "night": "22:00 Asia/Jakarta"
+  },
+  "template_repo": true,
+  "install_command": "/plugin install github.com/lafuanh/mind-bridge"
+}
